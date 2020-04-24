@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="goBackToMain"
+                android:text="Go back"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Clear all"
+                android:onClick="clearAll"/>
+
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/datasTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Scanned QR Code Content:" />
+
+    <ListView
+        android:id="@+id/datasList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
